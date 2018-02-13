@@ -19,4 +19,17 @@ public class SorterContainer {
             }
         }
     }
+
+    public static void newBubleSort(int[] array) {
+        for(int j = array.length;j>0;j--){
+            for(int i =1;i < array.length;i++ ) {
+                int temp =0;
+                if(array[i-1]>array[i]) {
+                    temp = array[i-1];
+                    array[i-1] = array[i];
+                    array[i]=temp;
+                }
+            }
+        }
+    }
 }
